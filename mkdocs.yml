@@ -1,0 +1,63 @@
+site_name: SecureReader Technical Documentation
+site_description: Technical documentation for the SecureReader Chrome extension
+repo_url: https://github.com/YOUR-ORG/YOUR-REPO
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - Overview: overview/index.md
+  - Getting Started: getting-started/index.md
+  - Architecture: architecture/index.md
+  - Frontend / Chrome Extension:
+      - Overview: frontend/index.md
+      - Page Reader: frontend/page-reader.md
+      - Speech and Voice: frontend/speech.md
+  - AI (Gemini Nano):
+      - Overview: ai/index.md
+      - Comment Purification: ai/purification.md
+  - Backend: backend/index.md
+  - Database: database/index.md
+  - Metrics and Monitoring: metrics/index.md
+  - Security and Privacy: security/index.md
+  - Integrations: integrations/index.md
+  - Code Standards: standards/index.md
+  - Testing and QA: testing/index.md
+  - Deployment: deployment/index.md
+  - Current Status:
+      - Limitations and Priorities: current-status/index.md
+      - Final Assessment: current-status/final-assessment.md
+  - References and Glossary: references.md
