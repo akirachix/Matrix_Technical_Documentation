@@ -1,9 +1,7 @@
 site_name: SecureReader Technical Documentation
 site_description: Technical documentation for the SecureReader project
 
-# Replace these with your repository values when known.
-repo_url: https://github.com/YOUR-ORG/YOUR-REPO
-edit_uri: edit/main/docs/
+repo_url: https://github.com/akirachix/Matrix_Technical_Documentation
 
 theme:
   name: material
