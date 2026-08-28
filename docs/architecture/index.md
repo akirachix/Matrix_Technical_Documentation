@@ -6,6 +6,14 @@ The team's formal architecture document is the [SecureReader SAD](https://lucid.
 
 The SAD can be used for authoritative architecture diagrams and architectural decisions.
 
+## Architecture diagram
+
+The authoritative system architecture diagram is maintained in the team's **Software Architecture Document (SAD)**. The documentation site does not recreate or redraw that diagram, so the diagram remains in its original Lucidchart source.
+
+[Open the SecureReader SAD and architecture diagram](https://lucid.app/lucidchart/c82a2e14-a27e-40cd-9c57-6490bf73eae1/edit?invitationId=inv_c3bd121b-0e1f-433d-a1d3-6ac2f1ff2416&page=0_0#)
+
+> **Diagram source:** Use the SAD as the source of truth for the current architecture diagram and architectural decisions.
+
 ## High-level architecture
 
 See the [SAD on Lucidchart](https://lucid.app/lucidchart/c82a2e14-a27e-40cd-9c57-6490bf73eae1/edit?invitationId=inv_c3bd121b-0e1f-433d-a1d3-6ac2f1ff2416&page=0_0#) for the current diagram.
