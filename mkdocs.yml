@@ -59,11 +59,11 @@ nav:
   - Database: database/index.md
   - Metrics and Monitoring: metrics/index.md
   - Security and Privacy: security/index.md
-  - Integrations: integrations/index.md
+  - Integrations: intergrations/index.md
   - Code Standards: standards/index.md
   - Testing and QA: testing/index.md
   - Deployment: deployment/index.md
   - Current Status:
       - Limitations and Priorities: current-status/index.md
       - Final Assessment: current-status/final-assessment.md
-  - References and Glossary: references.md
+  - References and Glossary: reference.md
