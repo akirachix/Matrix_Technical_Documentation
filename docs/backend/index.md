@@ -61,6 +61,23 @@ Login uses the backend's password-based authentication request. The extension su
 
 The returned authentication/session information is stored for later authenticated requests.
 
+## Authenticated request pattern
+
+The extension sends authenticated backend requests through the service worker using a bearer token. A representative request pattern is:
+
+```js
+fetch(`${API_URL}/metrics`, {
+  method: "POST",
+  headers: {
+    "Authorization": `Bearer ${token}`,
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(payload)
+});
+```
+
+The service worker owns this backend communication rather than exposing database access directly to the browser.
+
 ## Bearer authentication
 
 Authenticated requests use:
