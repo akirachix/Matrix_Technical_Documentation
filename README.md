@@ -6,7 +6,7 @@ This repository contains the technical documentation for the SecureReader projec
 
 The full technical documentation is published on GitHub Pages:
 
-**[SecureReader Technical Documentation](ADD-GITHUB-PAGES-URL-HERE)**
+**[Matrix_Technical_Documentation](https://github.com/akirachix/Matrix_Technical_Documentation)**
 
 ## Documentation Sections
 
@@ -22,7 +22,6 @@ Provides the information required for a new developer to understand the project 
 
 Documents the overall system architecture, major components, and how they interact.
 
-**[Software Architecture Document (SAD)](ADD-SAD-LINK-HERE)**
 
 ### Backend
 
@@ -72,8 +71,6 @@ Defines technical terms, acronyms, and project-specific terminology used through
 
 Where technical documents already exist, this documentation provides links to the original documents rather than duplicating their content.
 
-* [Software Architecture Document (SAD)](ADD-SAD-LINK-HERE)
+* [Software Architecture Document (SAD)](https://lucid.app/lucidchart/c82a2e14-a27e-40cd-9c57-6490bf73eae1/edit?invitationId=inv_c3bd121b-0e1f-433d-a1d3-6ac2f1ff2416&page=0_0# )
 * [ERD](ADD-ERD-LINK-HERE)
-* [API Documentation](ADD-API-LINK-HERE)
-* [Brand Guidelines](ADD-BRAND-GUIDELINES-LINK-HERE)
-* [Testing Documentation](ADD-TESTING-LINK-HERE)
+* [API Documentation](https://docs.google.com/document/d/1bwScVpZCh8B_trL5izIKHlrFW-PT39U_f7wSsHbguFY/edit?tab=t.0#heading=h.6fxiynwr0aa5 )

@@ -1,22 +1,27 @@
 site_name: SecureReader Technical Documentation
-site_description: Technical documentation for the SecureReader Chrome extension
+site_description: Technical documentation for the SecureReader project
+
+# Replace these with your repository values when known.
 repo_url: https://github.com/YOUR-ORG/YOUR-REPO
 edit_uri: edit/main/docs/
 
 theme:
   name: material
+  logo: assets/secure-reader-logo.png
+  favicon: assets/secure-reader-logo.png
+  font: false
   palette:
     - scheme: default
-      primary: deep orange
-      accent: teal
+      primary: white
+      accent: deep orange
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: deep orange
-      accent: teal
+      primary: black
+      accent: deep orange
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
   features:
     - navigation.instant
@@ -27,6 +32,9 @@ theme:
     - search.highlight
     - content.code.copy
     - toc.integrate
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
