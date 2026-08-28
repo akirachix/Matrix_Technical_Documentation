@@ -1,0 +1,69 @@
+site_name: SecureReader Technical Documentation
+site_description: Technical documentation for the SecureReader project
+
+repo_url: https://github.com/akirachix/Matrix_Technical_Documentation
+
+theme:
+  name: material
+  logo: assets/secure-reader-logo.png
+  favicon: assets/secure-reader-logo.png
+  font: false
+  palette:
+    - scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - Overview: overview/index.md
+  - Getting Started: getting-started/index.md
+  - Architecture: architecture/index.md
+  - Frontend / Chrome Extension:
+      - Overview: frontend/index.md
+      - Page Reader: frontend/page-reader.md
+      - Speech and Voice: frontend/speech.md
+  - AI (Gemini Nano):
+      - Overview: ai/index.md
+      - Comment Purification: ai/purification.md
+  - Backend: backend/index.md
+  - Database: database/index.md
+  - Metrics and Monitoring: metrics/index.md
+  - Security and Privacy: security/index.md
+  - Integrations: intergrations/index.md
+  - Code Standards: standards/index.md
+  - Testing and QA: testing/index.md
+  - Deployment: deployment/index.md
+  - Current Status:
+      - Limitations and Priorities: current-status/index.md
+      - Final Assessment: current-status/final-assessment.md
+  - References and Glossary: reference.md
