@@ -24,4 +24,4 @@ Where the supplied project materials do not provide enough evidence, this docume
 - Need the system diagrams? See [Architecture](architecture/index.md).
 - Working on extension code? See [Frontend / Chrome Extension](frontend/index.md).
 - Working on image descriptions or purification? See [AI (Gemini Nano)](ai/index.md).
-- Looking for design files? See the [SecureReader FigJam Board](https://www.figma.com/board/Hp55xeeCbfXaKqw80e8Msv/Matrix?node-id=0-1&t=jiv92gvgyCHdED8V-0) or the [References](references.md) page.
+- Looking for design files? See the [SecureReader FigJam Board](https://www.figma.com/board/Hp55xeeCbfXaKqw80e8Msv/Matrix?node-id=0-1&t=jiv92gvgyCHdED8V-0) or the [References](reference.md) page.
