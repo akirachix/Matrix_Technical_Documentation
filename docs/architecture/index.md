@@ -6,17 +6,51 @@ The team's formal architecture document is the [SecureReader SAD](https://lucid.
 
 The SAD can be used for authoritative architecture diagrams and architectural decisions.
 
+---
+
 ## Architecture diagram
 
-The authoritative system architecture diagram is maintained in the team's **Software Architecture Document (SAD)**. The documentation site does not recreate or redraw that diagram, so the diagram remains in its original Lucidchart source.
+The authoritative system architecture diagram is maintained in the team's **Software Architecture Document (SAD)**.
+
+The diagram below is the current system architecture diagram used by the team. The documentation site displays the original SVG diagram rather than recreating or redrawing it.
+
+<div class="architecture-diagram">
+  <img
+    src="../assets/sad.svg"
+    alt="SecureReader System Architecture Diagram"
+  />
+</div>
 
 [Open the SecureReader SAD and architecture diagram](https://lucid.app/lucidchart/c82a2e14-a27e-40cd-9c57-6490bf73eae1/edit?invitationId=inv_c3bd121b-0e1f-433d-a1d3-6ac2f1ff2416&page=0_0#)
 
 > **Diagram source:** Use the SAD as the source of truth for the current architecture diagram and architectural decisions.
 
+---
+
+## Cybersecurity architecture
+
+The cybersecurity architecture describes the security-related components, controls, and relationships within the SecureReader system.
+
+The original cybersecurity SAD is displayed below as an SVG.
+
+<div class="architecture-diagram">
+  <img
+    src="../assets/cybersecurity-sad.svg"
+    alt="SecureReader Cybersecurity Architecture Diagram"
+  />
+</div>
+
+> **Diagram source:** The cybersecurity SAD is the source of truth for the documented cybersecurity architecture and related security decisions.
+
+---
+
 ## High-level architecture
 
-See the [SAD on Lucidchart](https://lucid.app/lucidchart/c82a2e14-a27e-40cd-9c57-6490bf73eae1/edit?invitationId=inv_c3bd121b-0e1f-433d-a1d3-6ac2f1ff2416&page=0_0#) for the current diagram.
+SecureReader is composed of several cooperating components, including the browser extension interface, service worker, content scripts, backend API, AI capabilities, and speech functionality.
+
+The main communication paths between these components are described below.
+
+---
 
 ## Main communication paths
 

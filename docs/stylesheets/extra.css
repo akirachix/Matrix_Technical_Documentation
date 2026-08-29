@@ -20,14 +20,14 @@
 
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: #11161a;
-  --md-default-fg-color: #edf2f5;
-  --md-default-fg-color--light: #b9c6ce;
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: #ffffff;
   --md-primary-fg-color: #151b20;
   --md-primary-bg-color: #ffffff;
   --md-accent-fg-color: #ff9a4d;
   --md-typeset-a-color: #8db2ff;
   --sr-sidebar: #151b20;
-  --sr-border: #ffffff;
+  --sr-border: #bdb6b6;
   --sr-active: #2a211c;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 [data-md-color-scheme="slate"] .md-header {
-  color: #edf2f5;
+  color: #ff7f1f;
 }
 
 .md-header__inner {
@@ -100,7 +100,7 @@ body {
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap::before {
-  color: #edf2f5;
+  color: #ff7f1f;
 }
 
 .md-sidebar--primary .md-nav {
@@ -125,7 +125,7 @@ body {
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:hover {
   background: #1c252b;
-  color: #fff;
+  color: #ff7f1f;
 }
 
 .md-sidebar--primary .md-nav__link--active {
@@ -263,5 +263,88 @@ body {
 
   .md-typeset h1 {
     font-size: 29px;
+  }
+}
+
+.architecture-diagram {
+  margin: 28px 0 36px;
+  padding: 20px;
+  border: 1px solid var(--sr-border);
+  border-radius: 20px;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 10px 28px rgba(31, 41, 55, 0.10);
+  overflow-x: auto;
+}
+
+.architecture-diagram img {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.md-sidebar--secondary {
+  display: block;
+  width: 190px;
+}
+
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  border-left: 1px solid var(--sr-border);
+}
+
+.md-sidebar--secondary .md-nav__title {
+  color: var(--sr-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 16px 12px 8px;
+}
+
+.md-sidebar--secondary .md-nav__link {
+  color: var(--sr-muted);
+  font-size: 12px;
+  line-height: 1.35;
+  padding: 6px 12px;
+  margin: 1px 0;
+}
+
+.md-sidebar--secondary .md-nav__link:hover,
+.md-sidebar--secondary .md-nav__link--active {
+  color: var(--sr-orange);
+}
+
+.md-sidebar--primary {
+  order: 0;
+}
+
+.md-content {
+  order: 1;
+}
+
+.md-sidebar--secondary {
+  order: 2;
+}
+
+
+.architecture-diagram {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.architecture-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 800px;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--secondary {
+    display: none;
   }
 }

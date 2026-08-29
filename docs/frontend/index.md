@@ -1,99 +1,25 @@
-# Chrome Extension / Frontend
+# Frontend Web
 
-## Frontend technology
+## Overview
 
-The supplied extension uses:
+This section covers the SecureReader web-facing interfaces, including the dashboard and informational website.
 
-- React
-- React DOM
-- Vite
-- `@crxjs/vite-plugin`
-- Manifest V3
-- Chrome extension APIs
+## Dashboard
 
-## Main folder structure
+The dashboard is the web interface used to present SecureReader account and product information to authenticated users. Detailed implementation notes should be kept here as the dashboard evolves.
 
-```
-src/
-├── api/
-│   └── client.js
-├── background/
-│   ├── authManager.js
-│   ├── background.js
-│   ├── messageHandler.js
-│   └── sessionManager.js
-├── commands/
-│   ├── commandDictionary.js
-│   └── commandInterpreter.js
-├── components/
-│   ├── AccountButton.jsx
-│   ├── AccountMenu.jsx
-│   ├── ReaderControls.jsx
-│   └── Stats.jsx
-├── content/
-│   ├── commentDetector.js
-│   ├── content.js
-│   ├── imageDetector.js
-│   └── reader.js
-├── metrics/
-│   └── metrics.js
-├── pages/
-│   ├── ForgotPassword.jsx
-│   ├── Login.jsx
-│   └── Signup.jsx
-├── speech/
-│   ├── speechRecognition.js
-│   ├── speechSynthesis.js
-│   └── voiceProfiles.js
-├── utils/
-│   └── storage.js
-└── App.jsx
-```
+## Informational website
 
-## Where new code goes
+The informational website introduces SecureReader, explains the product at a high level, and provides a stakeholder-facing view of the project.
 
-| Change | Location |
-|---|---|
-| Popup UI component | `src/components/` |
-| Popup page | `src/pages/` |
-| Webpage DOM processing | `src/content/` |
-| Background/browser coordination | `src/background/` |
-| Speech functionality | `src/speech/` |
-| Command logic | `src/commands/` |
-| API client logic | `src/api/` |
-| Metrics | `src/metrics/` |
-| Storage helpers | `src/utils/` |
+[Open the SecureReader Informational Website](https://matrix-informational-website-4wyi.vercel.app/)
 
-!!! warning
-    Do not put webpage DOM logic into React popup components.
-    Do not put React components into the service worker.
-    Follow the existing responsibility boundaries when adding new code.
+## Development and testing
 
-## Popup
+Frontend-specific development, testing, and deployment details should be documented in this section as the web applications are maintained.
 
-The primary popup application is `src/App.jsx`. It provides access to:
+## Related documentation
 
-- reader controls;
-- speech settings;
-- image-description settings;
-- purification settings;
-- voice-command settings;
-- theme/brightness settings;
-- account functionality.
-
-## Settings storage
-
-Persistent reader settings use `chrome.storage.local`.
-
-The current settings key is `secureReaderSettings`.
-
-Storage helpers are in `src/utils/storage.js`.
-
-## Authentication session storage
-
-Authentication session state uses `chrome.storage.session` with key `secureReaderSession`.
-
-Authentication/session code is in:
-
-- `src/background/authManager.js`
-- `src/background/sessionManager.js`
+- [Chrome Extension](../chrome-extension/)
+- [Testing and QA](../testing/)
+- [Deployment](../deployment/)
